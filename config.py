@@ -57,6 +57,7 @@ bind('<Ctrl-l>', 'fake-key <Ctrl-right>')
 bind('<Ctrl-t>', 'fake-key <Enter>')
 bind('gh', ':scroll-to-perc --horizontal 0')
 bind('gl', ':scroll-to-perc --horizontal 100')
+bind('D', 'tab-close')
 
 # Interact with page
 bind(';', 'mode-enter normal', mode='hint')
