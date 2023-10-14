@@ -36,6 +36,40 @@ c.url.searchengines['sd'] = 'https://www.spanishdict.com/translate/{}'
 c.url.searchengines['mw'] = 'https://www.merriam-webster.com/dictionary/{}'
 c.url.searchengines['sm'] = 'https://mail.google.com/mail/u/1/#search/{}'
 
+# Ad blocking
+c.content.blocking.enabled = True
+c.content.blocking.method = 'both'
+c.content.blocking.adblock.lists = [
+    "https://easylist.to/easylist/easylist.txt",
+    "https://easylist.to/easylist/easyprivacy.txt",
+    "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
+    "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+    "https://www.i-dont-care-about-cookies.eu/abp/",
+    "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2020.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2021.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2022.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2023.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/badware.txt",
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt",
+    "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-firstparty.txt",
+    "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-social.txt",
+    "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-specific.txt",
+    "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-sugarcoat.txt",
+    "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-firstparty-cname.txt",
+    "file://localhost/home/j-ace-svg/.config/qutebrowser/adblock-list.txt",
+    ]
+c.content.blocking.hosts.lists = [
+    'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
+    'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts',
+'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts',
+    'https://curbengh.github.io/malware-filter/urlhaus-filter-online.txt',
+    ]
+
 #######################
 # Normal Mode
 #######################
