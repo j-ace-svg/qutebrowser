@@ -22,12 +22,18 @@ bind('<Shift+Space>', 'nop')
 #######################
 
 # Search engines
-c.url.searchengines['DEFAULT'] = 'https://duckduckgo.com/?q={}'
+
+c.url.default_page = 'https://searxng.nicfab.eu/searxng'
+c.url.searchengines['DEFAULT'] = 'https://searxng.nicfab.eu/searxng/search?categories=general&q={}'
+c.url.searchengines['t'] = 'https://searxng.nicfab.eu/searxng/search?categories=general,it&q={}'
+c.url.searchengines['ddg'] = 'https://duckduckgo.com/?q={}'
+c.url.searchengines['ns'] = 'https://search.nixos.org/packages?sort=relevance&type=packages&query={}'
 c.url.searchengines['yt'] = 'https://www.youtube.com/results?search_query={}'
 c.url.searchengines['gh'] = 'https://github.com/search?q={}'
 c.url.searchengines['gp'] = 'https://github.com/search?q={}+user%3Aj-ace-svg'
 c.url.searchengines['wr'] = 'https://www.wordreference.com/es/translation.asp?tranword={}'
 c.url.searchengines['sd'] = 'https://www.spanishdict.com/translate/{}'
+c.url.searchengines['mw'] = 'https://www.merriam-webster.com/dictionary/{}'
 c.url.searchengines['sm'] = 'https://mail.google.com/mail/u/1/#search/{}'
 
 #######################
